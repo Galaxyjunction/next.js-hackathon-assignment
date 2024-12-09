@@ -1,19 +1,21 @@
-import Features from "@/components/heroSection/Features";
-import GetInTouch from "@/components/heroSection/GetInTouch";
-import Hero from "@/components/heroSection/Hero";
-import Listing from "@/components/heroSection/Listing";
-import PopularProducts from "@/components/heroSection/PopularProducts";
-import SignUp from "@/components/heroSection/SignUp";
+import Features from "./page-components/Features";
+import Hero from "./page-components/Hero";
+import Listing from "./page-components/Listing";
+import Products from "./page-components/PopularProducts";
+import SignUp from "./page-components/SignUp";
+import GetInTouch from "./page-components/GetInTouch";
 
 export default function Home() {
   return (
-    <div className="relative mx-auto w-[390px] h-[4500px] bg-white md:w-[1440px] md:h-[4160px]">
-      <Hero />
-      <Features />
-      <Listing />
-      <PopularProducts />
-      <SignUp />
-      <GetInTouch />
-    </div>
+    <>
+  
+    <Hero/>
+    <Features/>
+    <Listing/>
+    <Products/>
+    <SignUp/>
+    <GetInTouch/>
+    
+    </>
   );
 }
